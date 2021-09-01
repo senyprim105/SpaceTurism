@@ -1,0 +1,53 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid white;
+}
+
+.table__head {
+    border-bottom: 1px solid white;
+}
+
+.table__row {}
+
+.table__th {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    padding: 13px 0px;
+}
+
+.table__body {}
+
+.table__data {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+    span {
+        display: block;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.table__note {
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+    color: #E5E5E5;
+    padding-left: 17px;
+    margin-top: 20px;
+    &::before {
+        content: "";
+        width: 6px;
+        height: 10px;
+        left: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        background: url(/img/icon_note.png) no-repeat center;
+    }
+}

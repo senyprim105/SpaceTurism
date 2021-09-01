@@ -1,0 +1,42 @@
+.contact__block {
+    max-width: 500px;
+    width: 100%;
+    color: white;
+}
+
+.contact__header {
+    margin-bottom: 50px;
+}
+
+.contact__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 100px;
+}
+
+.contact__form {}
+
+.contact__form-input {
+    &+& {
+        margin-top: 40px;
+    }
+    &:last-of-type {
+        margin-bottom: 70px;
+    }
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    &::placeholder {
+        color: inherit;
+        background-color: transparent;
+    }
+}
+
+.contact__form-button {
+    width: 100%;
+}

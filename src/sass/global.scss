@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "sf-pro-display", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    padding: 0;
+    background-color: #070B15;
+    color: #ffffff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.article-block+.article-block {
+    margin-top: 150px;
+}
+
+@function calcFluidFontSize($f-min, $f-max, $v-min, $v-max) {
+    $k: ($f-max - $f-min)/($v-max - $v-min);
+    $b: $f-min - $k * $v-min;
+    $b: $b * 1px;
+    @return calc( #{$k} * 100vw + #{$b});
+}

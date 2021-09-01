@@ -1,0 +1,33 @@
+.image-map {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    circle,
+    text {
+        transition: all 0.5s;
+        cursor: pointer,
+    }
+    foreignObject {
+        transition: color 0.5s;
+        cursor: pointer;
+        p {
+            margin: 0px;
+            text-align: center;
+        }
+    }
+    g:hover circle,
+    g:hover text {
+        fill: #036CCA;
+        font-size: 36px;
+        line-height: 42px;
+        color: #036CCA;
+    }
+    g:hover circle {
+        transform: scale(2, 2);
+    }
+    g:hover foreignobject {
+        color: #036cca;
+        font-size: 22px;
+        line-height: 25px;
+    }
+}

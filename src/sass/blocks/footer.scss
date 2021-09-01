@@ -1,0 +1,34 @@
+.footer {
+    padding: 100px 0px 150px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__column {
+    &+& {
+        margin-left: 50px;
+    }
+    &--text {
+        p+p {
+            margin-top: 50px;
+        }
+    }
+    &--menu,
+    &--links {
+        text-transform: uppercase;
+        li+li {
+            margin-top: 20px;
+        }
+    }
+    .footer__link {
+        transition: color 0.5s;
+    }
+    .footer__link:hover {
+        color: #CB0E0E;
+    }
+}

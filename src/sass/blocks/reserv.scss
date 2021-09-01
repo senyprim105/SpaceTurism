@@ -1,0 +1,19 @@
+.reserv {
+    min-height: 900px;
+    height: 100%
+}
+
+.reserv__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reserv__header {}
+
+.reserv__columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 383px;
+    width: 100%;
+}
