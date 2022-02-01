@@ -6,3 +6,23 @@
 .how-it-work__header {
     margin-bottom: 100px;
 }
+
+@media (max-width:992px) {
+    .how-it-work {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .how-it-work__header {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:575px) {
+    .how-it-work {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    .how-it-work__header {
+        margin-bottom: 30px;
+    }
+}

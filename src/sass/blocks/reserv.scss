@@ -9,11 +9,38 @@
     justify-content: space-between;
 }
 
-.reserv__header {}
-
 .reserv__columns {
     display: flex;
     justify-content: space-between;
     max-width: 383px;
     width: 100%;
+}
+
+@media (max-width:1200px) {
+    .reserv__inner {
+        display: block;
+    }
+    .reserv__header {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:575px) {
+    .reserv {
+        min-height: auto;
+    }
+    .reserv__header {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .reserv__columns {
+        display: block;
+        max-width: none;
+        p {
+            max-width: none;
+        }
+        p+p {
+            margin-top: 20px;
+        }
+    }
 }

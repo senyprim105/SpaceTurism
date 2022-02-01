@@ -32,3 +32,40 @@
         color: #CB0E0E;
     }
 }
+
+@media (max-width:992px) {
+    .footer {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 50px 0px;
+    }
+    .footer__inner {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:575px) {
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+    .footer__column {
+        max-width: none;
+        width: auto;
+        &+& {
+            margin-left: 0;
+        }
+    }
+    .footer__column--links {
+        text-align: right;
+    }
+    .footer__column--text {
+        text-align: center;
+        p {
+            max-width: 100%;
+        }
+        p+p {
+            margin-top: 10px;
+        }
+        margin-bottom: 20px;
+    }
+}

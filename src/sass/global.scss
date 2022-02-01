@@ -51,6 +51,12 @@ ul {
 
 .article-block+.article-block {
     margin-top: 150px;
+    @media (max-width: 1200px) {
+        margin-top: 100px;
+    }
+    @media (max-width:575px) {
+        margin-top: 25px;
+    }
 }
 
 @function calcFluidFontSize($f-min, $f-max, $v-min, $v-max) {

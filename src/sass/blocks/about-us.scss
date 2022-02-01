@@ -1,5 +1,15 @@
 .about-us {
     &__header {
         margin-bottom: 100px;
+        @media (max-width: 992px) {
+            margin-bottom: 70px;
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 50px;
+            max-width: none;
+        }
+        @media (max-width: 575px) {
+            margin-bottom: 30px;
+        }
     }
 }

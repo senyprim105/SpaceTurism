@@ -1,11 +1,38 @@
 .section {
-    padding: 100px 0px;
+    padding: $section-padding-1200;
 }
 
 .section__header {
     font-family: space-age, sans-serif;
     font-size: 48px;
-    line-height: 48px;
+    line-height: 1;
     max-width: 600px;
     width: 100%;
+}
+
+@media (max-width:992px) {
+    .section {
+        padding: 80px 0;
+    }
+    .section__header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .section {
+        padding: 60px 0;
+    }
+    .section__header {
+        text-align: center;
+    }
+}
+
+@media (max-width:575px) {
+    .section {
+        padding: 40px 0;
+    }
+    .section__header {
+        font-size: 30px;
+    }
 }

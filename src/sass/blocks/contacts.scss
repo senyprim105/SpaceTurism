@@ -40,3 +40,30 @@
 .contact__form-button {
     width: 100%;
 }
+
+@media (max-width:992px) {
+    .contact__block {
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:768px) {
+    .contact__text {
+        font-size: 19px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .contact__form-input {
+        &+& {
+            margin-top: 10px;
+        }
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+    }
+    .contact__block {
+        margin-bottom: 40px;
+    }
+}
